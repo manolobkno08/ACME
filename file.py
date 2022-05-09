@@ -13,9 +13,8 @@ class File():
     Initialization of File class
     """
 
-    def __init__(self, filename, username):
+    def __init__(self, path_file):
         """
         Constructor method
         """
-        self.__filename = filename
-        self.__username = username
+        self.__filename = path_file
