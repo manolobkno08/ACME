@@ -6,20 +6,12 @@ Read File Verification
 """
 import time
 import os
+from file_class import File
 
 
 def clear():
     """Method that clear data from the console"""
     return os.system("clear")
-
-
-def verify_txt(path_file):
-    """Method that verify if the file is a txt file"""
-    r = path_file.split(".")
-    if r[1] == "txt":
-        return True
-    else:
-        return False
 
 
 def read_file(username):
@@ -31,19 +23,34 @@ def read_file(username):
                         Usage:      filename.txt\n
                         Enter filename: """)
 
+    # Get absolute path to the file
     path_file = os.path.dirname(os.path.realpath(
         __file__)) + "/files/" + choose_file
 
+    # New object instance
+    newFile = File(path_file)
+    flag = 0
+
     try:
-        if not verify_txt(path_file):
+        if not newFile.verify_txt():
+            raise Exception()
+
+        if not newFile.verify_content():
+            flag = 1
             raise Exception()
 
         with open(path_file, "r", encoding="utf-8") as f:
             print(f.read(), end="")
 
     except Exception:
-        print(f"\n\t=>  File '{choose_file}' not found [must be .txt]")
+        if flag == 1:
+            print(
+                f"\n\t=>  File '{choose_file}' must contain at least five lines")
+        else:
+            print(f"\n\t=>  File '{choose_file}' not found [must be .txt]")
+
         choise = input("\n\t\t\tWould you like to continue? (y/n): ")
+
         if choise == "y":
             clear()
             read_file(username)
