@@ -27,6 +27,11 @@ def read_file(username):
     path_file = os.path.dirname(os.path.realpath(
         __file__)) + "/files/" + choose_file
 
+    # CHECK SINGLETON PATTERN
+    # newFile = File("ONE")
+    # newFile2 = File("TWO")
+    # print(newFile is newFile2)
+
     # New object instance
     newFile = File(path_file)
     flag = 0

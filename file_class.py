@@ -1,12 +1,25 @@
 #!/usr/bin/env python3
 
 """
-Class file
+Class file - Singleton Pattern
 
 """
 
 
-class File():
+def singleton(cls):
+    """Set only one instance using the singleton pattern"""
+    instances = dict()
+
+    def wrap(*args, **kwargs):
+        if cls not in instances:
+            instances[cls] = cls(*args, **kwargs)
+        return instances[cls]
+
+    return wrap
+
+
+@singleton
+class File(object):
     """
     Initialization of File class
     """
