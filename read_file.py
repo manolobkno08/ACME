@@ -45,9 +45,9 @@ def read_file(username):
         #     raise Exception()
 
         new_dict = newFile.save_to_dictionary()
-        # print(new_dict)
+        print(new_dict)
 
-        print(newFile.data_representation(new_dict))
+        #print(newFile.data_representation(new_dict))
         # with open(path_file, "r", encoding="utf-8") as f:
         #     print(f.read(), end="")
 
