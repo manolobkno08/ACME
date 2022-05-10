@@ -34,3 +34,23 @@ class File():
                 return False
             else:
                 return True
+
+    def save_to_dictionary(self):
+        """Save data into new dictionary"""
+        new_dic = {}
+        with open(self.__path_file, "r", encoding="utf-8") as f:
+            for line in f:
+                user, values = line.strip().split("=")
+                new_dic[user] = values
+        return new_dic
+
+    def data_representation(self, new_dict):
+        """Convert to dictionary of dictionaries"""
+        for key, value in new_dict.items():
+            new = {}
+            hours = value.split(",")
+            for item in hours:
+                new[item[:2]] = item[2:]
+            new_dict[key] = new
+
+        return new_dict

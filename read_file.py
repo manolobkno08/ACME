@@ -35,12 +35,16 @@ def read_file(username):
         if not newFile.verify_txt():
             raise Exception()
 
-        if not newFile.verify_content():
-            flag = 1
-            raise Exception()
+        # if not newFile.verify_content():
+        #     flag = 1
+        #     raise Exception()
 
-        with open(path_file, "r", encoding="utf-8") as f:
-            print(f.read(), end="")
+        new_dict = newFile.save_to_dictionary()
+        # print(new_dict)
+
+        print(newFile.data_representation(new_dict))
+        # with open(path_file, "r", encoding="utf-8") as f:
+        #     print(f.read(), end="")
 
     except Exception:
         if flag == 1:
