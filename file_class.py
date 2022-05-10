@@ -28,7 +28,8 @@ class File():
     def verify_content(self):
         """Verify if the file contains at least five lines"""
         with open(self.__path_file, "r", encoding="utf-8") as f:
-            c = [i for i in f.readlines()]
+            c = [i for i in f if i != "\n"]
+            # print(c)
             if len(c) < 5:
                 return False
             else:
