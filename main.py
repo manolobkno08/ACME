@@ -4,7 +4,8 @@
 Console
 
 """
-from read_file import clear, read_file
+
+from modules.read_file import clear, read_file
 
 
 def ACMECommand():

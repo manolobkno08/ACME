@@ -6,12 +6,21 @@ Read File Verification
 """
 import time
 import os
-from file_class import File
+from classes.file import File
 
 
 def clear():
     """Method that clear data from the console"""
     return os.system("clear")
+
+
+def get_path_files(choose_file):
+    """Get absolute path to read files"""
+    separator = os.path.sep
+    path = os.path.dirname(os.path.realpath(__file__))
+    r = separator.join(path.split(separator)[:-1])
+    path_file = r + "/files/" + choose_file
+    return path_file
 
 
 def read_file(username):
@@ -23,13 +32,11 @@ def read_file(username):
                         Usage:      filename.txt\n
                         Enter filename: """)
 
-    # Get absolute path to the file
-    path_file = os.path.dirname(os.path.realpath(
-        __file__)) + "/files/" + choose_file
-
+    path_file = get_path_files(choose_file)
+    # print(path_file)
     # CHECK SINGLETON PATTERN
-    # newFile = File("ONE")
-    # newFile2 = File("TWO")
+    # newFile = File()
+    # newFile2 = File()
     # print(newFile is newFile2)
 
     # New object instance
@@ -70,7 +77,7 @@ def read_file(username):
         elif choise == "n":
             clear()
             print(f"\n\t=>  See you later {username}!\n")
-            time.sleep(2)
+            time.sleep(1.5)
             exit()
         else:
             clear()
