@@ -47,6 +47,8 @@ RENE-ASTRID: 3
 
 ### Include files to read
 
+- Store the files you want to read in the `files` folder as .txt
+
 <img src = "https://cdn.discordapp.com/attachments/887159577802604575/974096326570696824/unknown.png" width = "500"/>
 
 
@@ -67,9 +69,9 @@ RENE-ASTRID: 3
 - Copy the repository
 - Enter the new folder `ACME`.
 - Execute the main.py file: `python3 main.py` or `./main.py`
-  
+
 
 
 ### Authors
 
-- **Manuel Alejandro Gomez** - [LinkedIn](https://github.com/manolobkno08)
+- **Manuel Alejandro Gomez** - [LinkedIn](https://www.linkedin.com/in/manolobkno08/)
