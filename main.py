@@ -21,7 +21,7 @@ def ACMECommand():
             if username.isspace() == False:
                 try:
                     choise = int(input(f"""
-                        ==== ¡{username}! Welcome to ACME ====
+                        ===== ¡{username}! Welcome to ACME =====
                         Please, choose one of the following options:
 
                         1      Read file

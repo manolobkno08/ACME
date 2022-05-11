@@ -26,14 +26,14 @@ def get_path_files(choose_file):
 def read_file(username):
     """Method that allow verify and read txt files"""
     choose_file = input("""
-                        ==== Read File - ACME ====
+                        ===== Read File - ACME =====
                         Please, enter the name of the file:
 
                         Usage:      filename.txt\n
                         Enter filename: """)
 
     path_file = get_path_files(choose_file)
-    # print(path_file)
+
     # CHECK SINGLETON PATTERN
     # newFile = File()
     # newFile2 = File()
@@ -57,7 +57,17 @@ def read_file(username):
         final_dict = newFile.data_dict_to_dict(new_dict)
         final_result = newFile.final_comparison(final_dict)
 
-        [print(f"{key}: {value}") for key, value in final_result.items()]
+        clear()
+        print("""
+                        ===== Final Report - ACME =====
+                        Pairs of employees who have coincided in the office.
+                        """)
+
+        [print(f"\t\t\t{key}: {value}") for key, value in final_result.items()]
+
+        print(f"\n\t=>  See you later {username}!\n")
+        time.sleep(1.5)
+        exit()
 
     except Exception:
         if flag == 1:
