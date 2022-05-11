@@ -33,11 +33,13 @@ def read_file(username):
     # print(newFile is newFile2)
 
     # New object instance
-    newFile = File(path_file)
+    newFile = File()
     flag = 0
+    newFile.path_file = path_file
 
     try:
         if not newFile.verify_txt():
+            flag = 2
             raise Exception()
 
         # if not newFile.verify_content():
@@ -54,8 +56,11 @@ def read_file(username):
         if flag == 1:
             print(
                 f"\n\t=>  File '{choose_file}' must contain at least five lines")
+        elif flag == 2:
+            print(
+                f"\n\t=>  File must be .txt")
         else:
-            print(f"\n\t=>  File '{choose_file}' not found [must be .txt]")
+            print(f"\n\t=>  File '{choose_file}' not found")
 
         choise = input("\n\t\t\tWould you like to continue? (y/n): ")
 

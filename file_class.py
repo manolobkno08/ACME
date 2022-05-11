@@ -24,15 +24,23 @@ class File(object):
     Initialization of File class
     """
 
-    def __init__(self, path_file):
+    def __init__(self):
         """
         Constructor method
         """
-        self.__path_file = path_file
+        self._path_file = ""
+
+    @property
+    def path_file(self):
+        return self._path_file
+
+    @path_file.setter
+    def path_file(self, p):
+        self._path_file = p
 
     def verify_txt(self):
         """Method that verify if the file is a txt file"""
-        r = self.__path_file.split(".")
+        r = self._path_file.split(".")
         if r[1] == "txt":
             return True
         else:
@@ -40,7 +48,7 @@ class File(object):
 
     def verify_content(self):
         """Verify if the file contains at least five lines"""
-        with open(self.__path_file, "r", encoding="utf-8") as f:
+        with open(self._path_file, "r", encoding="utf-8") as f:
             c = [i for i in f if i != "\n"]
             # print(c)
             if len(c) < 5:
@@ -51,14 +59,14 @@ class File(object):
     def save_to_dictionary(self):
         """Save data into new dictionary"""
         new_dic = {}
-        with open(self.__path_file, "r", encoding="utf-8") as f:
+        with open(self._path_file, "r", encoding="utf-8") as f:
             for line in f:
                 user, values = line.strip().split("=")
                 new_dic[user] = values
         return new_dic
 
     def convert_hours(self, new):
-        """Split hours and storage as"""
+        """Split hours and storage as int into list"""
         for key, value in new.items():
             hours = value.split("-")
             newlist = []
