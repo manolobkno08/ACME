@@ -51,7 +51,9 @@ RENE-ASTRID: 3
 
 <img src = "https://cdn.discordapp.com/attachments/887159577802604575/974088147275247646/unknown.png" width = "900"/>
 
+- Select valid option
 
+<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974094426429358170/unknown.png" width = "900"/>
 
 
 
@@ -64,4 +66,4 @@ RENE-ASTRID: 3
 
 ### Authors
 
-- **Manuel Alejandro Gomez** - [*manologm10@hotmail.com*](https://mail.google.com/mail/u/0/#inbox) - [GitHub](https://github.com/manolobkno08)
+- **Manuel Alejandro Gomez** - [LinkedIn](https://github.com/manolobkno08)
