@@ -32,11 +32,13 @@ class File(object):
 
     @property
     def path_file(self):
+        """Get method"""
         return self._path_file
 
     @path_file.setter
-    def path_file(self, p):
-        self._path_file = p
+    def path_file(self, path_file):
+        """Set method"""
+        self._path_file = path_file
 
     def verify_txt(self):
         """Method that verify if the file is a txt file"""
