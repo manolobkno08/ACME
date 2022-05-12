@@ -14,6 +14,7 @@ The goal of this exercise is to output a table containing pairs of employees and
 
 Input: the name of an employee and the schedule they worked, indicating the time and hours. This should be a .txt file with at least five sets of data. You can include the data from our examples below:
 
+```bash
 Example 1:
 
 INPUT
@@ -21,12 +22,13 @@ RENE=MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00- 21:00
 ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 
-
 OUTPUT:
 ASTRID-RENE: 2
 ASTRID-ANDRES: 3
 RENE-ANDRES: 2
+```
 
+```bash
 Example 2:
 
 INPUT:
@@ -35,8 +37,7 @@ ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 
 OUTPUT:
 RENE-ASTRID: 3
-
-
+```
   
 
 ### FlowChart
@@ -50,6 +51,12 @@ RENE-ASTRID: 3
 - Store the files you want to read in the `files` folder as .txt
 
 <img src = "https://cdn.discordapp.com/attachments/887159577802604575/974101619648102451/unknown.png" width = "200"/>
+
+### Format by line
+
+```bash
+ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
+```
 
 
 
