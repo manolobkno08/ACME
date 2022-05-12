@@ -49,7 +49,7 @@ RENE-ASTRID: 3
 
 - Store the files you want to read in the `files` folder as .txt
 
-<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974101619648102451/unknown.png" width = "500"/>
+<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974101619648102451/unknown.png" width = "200"/>
 
 
 
