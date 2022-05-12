@@ -4,7 +4,7 @@
 
 - `classes` --> Folder that contains the File class representation.
 - `modules` --> Folder that contains the methods and validations before generating the final report.
-- `test` --> Folder that contains the necessary unit tests to check the correct operation of the application.
+- `tests` --> Folder that contains the necessary unit tests to check the correct operation of the application.
 - `files` --> Folder that contains the files to read.
 - `main.py` --> File to start the aplication.
 
