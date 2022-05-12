@@ -102,14 +102,15 @@ class File(object):
         final = {}
 
         visited = []
-        for user1, days1 in final_dict.items():
+        for user1, days1 in final_dict.items():  # RENE
             visited.append(user1)
-            for user2, days2 in final_dict.items():
+            for user2, days2 in final_dict.items():  # NEXT USER
                 if user2 not in visited:
                     common_days = days1.keys() & days2.keys()
+                    # common_days = ("MO", "TH", "SU")
                     count = 0
                     for day in common_days:
-                        start_user1, end_user1 = days1[day]
+                        start_user1, end_user1 = days1[day]  # [10.25, 12.0]
                         start_user2, end_user2 = days2[day]
                         if start_user2 > end_user1:
                             continue
