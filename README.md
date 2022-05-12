@@ -55,7 +55,7 @@ Finally I developed the application using the OOP paradigm.
 
 ### FlowChart
 
-<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974193440399171604/Untitled_1.jpg" width = "600"/>
+<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974193440399171604/Untitled_1.jpg" width = "900"/>
 
 
 
