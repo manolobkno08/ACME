@@ -72,18 +72,18 @@ class File(object):
         for key, value in new.items():
             hours = value.split("-")
             newlist = []
-            for hour in hours:  # [10:00, 12:00]
+            for hour in hours:  # [10:15, 12:00]
                 res = hour.split(":")
-                x = list(map(int, res))
-                newlist.append(x)
-            hours = newlist  # [[10, 0], [12, 0]]
+                res = list(map(int, res))
+                newlist.append(res)
+            hours = newlist  # [[10, 15], [12, 0]]
 
-            for i in range(len(hours)):
+            for i in range(len(hours)):  # [[10, 15], [12, 0]]
                 hour = hours[i][0]
                 minute = hours[i][1]
-                hour_decimal = hour + (minute / 60.0)
+                hour_decimal = hour + (minute / 60.0)  # 10.25
                 hours[i] = hour_decimal
-            new[key] = hours
+            new[key] = hours  # [10.25, 12.0]
 
     def data_dict_to_dict(self, new_dict):
         """Convert to dictionary of dictionaries"""
