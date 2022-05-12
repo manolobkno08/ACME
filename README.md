@@ -96,6 +96,7 @@ ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 ### Install
 - Copy the repository
 - Enter the new folder `ACME`.
+- Run `pip install -r requirements.txt` to install the test dependencies.
 - Execute the main.py file: `python3 main.py` or `./main.py`
 
 
