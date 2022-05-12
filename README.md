@@ -49,7 +49,7 @@ RENE-ASTRID: 3
 
 - Store the files you want to read in the `files` folder as .txt
 
-<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974096326570696824/unknown.png" width = "500"/>
+<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974101619648102451/unknown.png" width = "500"/>
 
 
 
@@ -63,7 +63,7 @@ RENE-ASTRID: 3
 
 <img src = "https://cdn.discordapp.com/attachments/887159577802604575/974094426429358170/unknown.png" width = "900"/>
 
-- Select the file you want to read
+- Enter the filename you want to read
 
 <img src = "https://cdn.discordapp.com/attachments/887159577802604575/974099123626201138/unknown.png" width = "900"/>
 
