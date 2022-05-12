@@ -26,6 +26,13 @@ class test_main_docs(unittest.TestCase):
         self.assertEqual(result.total_errors, 0,
                          "Found code style errors (and warnings).")
 
+    def test_ACMECommand_function_docstring(self):
+        """Test for the ACMECommand docstring"""
+        self.assertIsNot(ACMECommand.__doc__, None,
+                         "ACMECommand needs a docstring")
+        self.assertTrue(len(ACMECommand.__doc__) >= 1,
+                        "ACMECommand needs a docstring")
+
 
 if __name__ == '__main__':
     """Main Unittest"""
