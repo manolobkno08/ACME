@@ -55,7 +55,7 @@ Finally I developed the application using the OOP paradigm.
 
 ### FlowChart
 
-<a href="https://lucid.app/lucidchart/invitations/accept/inv_a1bc173c-ce8a-4496-b8c3-bcfad1636812?viewport_loc=-311%2C-106%2C2560%2C1168%2C0_0"><img src="https://github.com/manolobkno08/simple_shell/blob/main/images/diagrama.png"></a>
+<a href="https://cdn.discordapp.com/attachments/887159577802604575/974193440399171604/Untitled_1.jpg"></a>
 
 
 
