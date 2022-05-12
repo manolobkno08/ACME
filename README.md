@@ -43,6 +43,16 @@ RENE-ASTRID: 3
 ```
   
 
+### Overview Solution
+
+The first step was to really understand the requirement, making a whiteboard to generate a flow from start to finish of the application and dividing the problem into smaller problems.
+
+Once the small problems were identified, I defined the design pattern that best fit, in this case I implemented Singleton, which guarantees the existence of a single object of its type and provides a single point of access.
+
+Finally I developed the application using the OOP paradigm.
+
+
+
 ### FlowChart
 
 <a href="https://lucid.app/lucidchart/invitations/accept/inv_a1bc173c-ce8a-4496-b8c3-bcfad1636812?viewport_loc=-311%2C-106%2C2560%2C1168%2C0_0"><img src="https://github.com/manolobkno08/simple_shell/blob/main/images/diagrama.png"></a>
