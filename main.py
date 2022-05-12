@@ -18,7 +18,7 @@ def ACMECommand():
 
     while run:
         if len(username) > 0:
-            if username.isspace() == False:
+            if username.isspace() is False:
                 try:
                     choise = int(input(f"""
                         ===== ¡{username}! Welcome to ACME =====
@@ -48,7 +48,7 @@ def ACMECommand():
             else:
                 clear()
                 username = input(
-                    "\t=>  User not valid, enter your username again: ").upper()
+                    "\t=>  User invalid, enter your username again: ").upper()
         else:
             clear()
             username = input(
