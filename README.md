@@ -45,7 +45,7 @@ RENE-ASTRID: 3
 
 
 
-### Include files to read
+### Usage
 
 - Store the files you want to read in the `files` folder as .txt
 
@@ -62,6 +62,10 @@ RENE-ASTRID: 3
 - Select valid option
 
 <img src = "https://cdn.discordapp.com/attachments/887159577802604575/974094426429358170/unknown.png" width = "900"/>
+
+- Select the file you want to read
+
+<img src = "https://cdn.discordapp.com/attachments/887159577802604575/974099123626201138/unknown.png" width = "900"/>
 
 
 
