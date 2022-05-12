@@ -49,9 +49,9 @@ def read_file(username):
             flag = 2
             raise Exception()
 
-        # if not newFile.verify_content():
-        #     flag = 1
-        #     raise Exception()
+        if not newFile.verify_content():
+            flag = 1
+            raise Exception()
 
         new_dict = newFile.save_to_dictionary()
         final_dict = newFile.data_dict_to_dict(new_dict)
@@ -71,8 +71,8 @@ def read_file(username):
 
     except Exception:
         if flag == 1:
-            print(
-                f"\n\t=>  File '{choose_file}' must contain at least five lines")
+            print("\n\t=>  File '{x}' must contain at least five sets of data".
+                  format(x=choose_file))
         elif flag == 2:
             print(
                 f"\n\t=>  File must be .txt")
