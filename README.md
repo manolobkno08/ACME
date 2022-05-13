@@ -101,6 +101,12 @@ ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 
 
 
+### Check Unittest
+- Execute module test `python3 -m unittest tests/test_modules/test_read_file.py`
+- Execute class test `python3 -m unittest tests/test_classes/test_file.py`
+
+
+
 ### Authors
 
 - **Manuel Alejandro Gomez** - [LinkedIn](https://www.linkedin.com/in/manolobkno08/)
