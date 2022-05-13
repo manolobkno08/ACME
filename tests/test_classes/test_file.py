@@ -28,6 +28,18 @@ class test_file_docs(unittest.TestCase):
                          "Found code style errors (and warnings).")
 
 
+class test_file_methods(unittest.TestCase):
+    """Testing file class methods"""
+
+    def test_File(self):
+        """Testing file class that create instance"""
+        objectName = File()
+        # If the check fails
+        message = "given object is not instance of Myclass."
+        # assertIsInstance() to check if obj is instance of class
+        self.assertIsInstance(objectName, type(File), message)
+
+
 if __name__ == '__main__':
     """Main Unittest"""
     unittest.main()
