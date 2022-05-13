@@ -39,8 +39,9 @@ class tests_read_file_functions(unittest.TestCase):
     def test_read_file(self):
         """Testing function that get user and read file"""
         self.assertIsInstance("MANUEL", str)
-        # with self.assertRaises(TypeError):
-        #     get_path_files(5)
+        self.assertTrue("MANUEL".isupper())
+        with self.assertRaises(TypeError):
+            get_path_files(2.4)
 
 
 if __name__ == '__main__':

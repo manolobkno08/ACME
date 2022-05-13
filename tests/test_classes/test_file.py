@@ -32,12 +32,13 @@ class test_file_methods(unittest.TestCase):
     """Testing file class methods"""
 
     def test_File(self):
-        """Testing file class that create instance"""
-        objectName = File()
+        """Testing singleton file class with unique instance"""
+        object1 = File()
+        object2 = File()
         # If the check fails
-        message = "given object is not instance of Myclass."
+        message = "given objects are not the same instance"
         # assertIsInstance() to check if obj is instance of class
-        self.assertIsInstance(objectName, type(File), message)
+        self.assertIs(object1, object2, message)
 
 
 if __name__ == '__main__':
