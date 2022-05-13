@@ -19,7 +19,7 @@ def get_path_files(choose_file):
     separator = os.path.sep
     path = os.path.dirname(os.path.realpath(__file__))
     r = separator.join(path.split(separator)[:-1])
-    path_file = r + "/files/" + choose_file
+    path_file = f"{r}{separator}files{separator}{choose_file}"
     return path_file
 
 

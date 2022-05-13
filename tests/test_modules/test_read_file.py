@@ -5,7 +5,8 @@ Unittest for File class
 
 import unittest
 import pep8
-from modules.read_file import read_file, get_path_files
+import os
+from modules.read_file import read_file as rf, get_path_files
 
 
 class test_read_file_docs(unittest.TestCase):
@@ -31,17 +32,18 @@ class tests_read_file_functions(unittest.TestCase):
 
     def test_get_path_files(self):
         """Testing function that get str and return absolute path"""
-        self.assertEqual(get_path_files("data.txt"),
-                         "/home/manolo/ACME/files/data.txt")
-        with self.assertRaises(TypeError):
-            get_path_files(5)
+        separator = os.path.sep
+        path = os.path.dirname(os.path.realpath(__file__))
+        r = separator.join(path.split(separator)[:-2])
+        path_file = f"{r}{separator}files{separator}data.txt"
+        self.assertEqual(get_path_files("data.txt"), path_file)
 
     def test_read_file(self):
         """Testing function that get user and read file"""
         self.assertIsInstance("MANUEL", str)
         self.assertTrue("MANUEL".isupper())
-        with self.assertRaises(TypeError):
-            get_path_files(2.4)
+        # with self.assertRaises(TypeError):
+        #     rf(2.4)
 
 
 if __name__ == '__main__':
