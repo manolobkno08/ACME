@@ -62,7 +62,7 @@ def read_file(username):
             clear()
             print("""
                             ===== Final Report - ACME =====
-                            Pairs of employees who have coincided in the office.
+                            Pairs of employees who have coincided in the office
                             """)
 
             [print(f"\t\t\t{key}: {value}")
@@ -74,7 +74,7 @@ def read_file(username):
 
         except Exception:
             if flag == 1:
-                print("\n\t=>  File '{x}' must contain at least five sets of data".
+                print("\n\t=>  File '{x}' must contain at least five datasets".
                       format(x=choose_file))
             elif flag == 2:
                 print(
